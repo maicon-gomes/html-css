@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explosão de Partículas</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background-color: #111;
+    overflow: hidden;
+    cursor: crosshair;
+  }
+
+  .particula {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #ff0;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+  }
+</style>
+</head>
+<body>
+
+<script>
+  document.addEventListener('click', (e) => {
+    const numParticulas = 30;
+
+    for(let i = 0; i < numParticulas; i++){
+      const particula = document.createElement('div');
+      particula.classList.add('particula');
+      document.body.appendChild(particula);
+
+      // Posição inicial
+      particula.style.left = e.clientX + 'px';
+      particula.style.top = e.clientY + 'px';
+
+      // Direção e distância aleatória
+      const angle = Math.random() * 2 * Math.PI;
+      const distance = 50 + Math.random() * 100;
+      const x = Math.cos(angle) * distance;
+      const y = Math.sin(angle) * distance;
+
+      // Mudança de cor aleatória
+      const r = Math.floor(Math.random() * 255);
+      const g = Math.floor(Math.random() * 255);
+      const b = Math.floor(Math.random() * 255);
+      particula.style.backgroundColor = `rgb(${r},${g},${b})`;
+
+      // Executa animação
+      setTimeout(() => {
+        particula.style.transform = `translate(${x}px, ${y}px) scale(0)`;
+        particula.style.opacity = 0;
+      }, 50);
+
+      // Remove depois da animação
+      setTimeout(() => {
+        particula.remove();
+      }, 650);
+    }
+  });
+</script>
+</body>
+</html>

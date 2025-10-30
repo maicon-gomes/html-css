@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+body {
+    background-image: linear-gradient(to right,#86382C,#9D855F );
+
+}
+
+main {
+    background-color: white;
+    text-align: center;
+    width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 3px;
+    box-shadow: 5px 5px 15px #120000ad;
+
+}
+img {
+    box-shadow: 10px 10px 10px black;
+}
+
+h1 {
+    color: #883b26a2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    background-color: black;
+}
+
+p {
+    color: aqua;
+}
+
+
+.secundarios {
+    color: orange;
+}

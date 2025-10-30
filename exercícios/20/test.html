@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de pseudo-classes/pseudo-elementos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #akatsuki {
+            color: red;
+        }
+
+        #sasuke {
+            color: blue;
+        }
+
+        #tobi {
+            color: orange;
+        }
+
+        a:hover {
+            background-color: black;
+        }
+
+        a:active {
+            background-color: pink;
+        }
+
+        a::before {
+            content: '→';
+        }
+
+        a::after {
+            content:'←';
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de conhecimento</h1>
+    <ul>
+        <li><a id="akatsuki" href="https://youtu.be/-oYMo8k22Vw?si=yhry5U3RE4jp0OYk">Rap da Akatsuki - 7mz</a></li>
+        <li><a id="sasuke" href="https://youtu.be/zLlMd8ijUlw?si=4-DG9xNY82zGL0Fq">Tipo Sasukezin - Mhrap</a></li>
+        <li><a id="tobi" href="https://youtu.be/ZAa0hJKXwZU?si=gW9C3QSyGcBQT788">Tipo Tobi - Mhrap</a></li>
+    </ul>
+</body>
+</html>

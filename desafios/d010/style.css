@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: android;
+    src: url(fontes/idroid.otf);
+    }
+    @font-face {
+        font-family: bogle;
+        src: url(fontes/Oswald-VariableFont_wght.ttf);
+    }
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    color: white;
+    font-family: bogle;
+    font-size: large;
+    font-weight: 100;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #259A58,#116736,#094E25,#043D1C);
+    padding: 30px;
+}
+
+#Curiosidades {
+    padding: 40px;
+
+}
+
+a {
+    color: rgba(255, 255, 255, 0.781);
+    text-decoration: none;
+    margin: 10px 10px 10px 10px;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+nav {
+    text-align: left;
+    margin: 10px 10px -23px -28px;
+    color: rgba(255, 255, 255, 0.288);
+}
+
+.hs {
+    font-family: android;
+}
+
+#version1 {
+    font-family: android;
+    color: rgb(15, 85, 15);
+    background-image: linear-gradient(to right, #9ef3a1, #ffffff);
+}
+
+body {
+    background-color: beige;
+    text-align: centerargin: 0px;
+}
+
+main {
+    background-color: white;
+}
+
+#video {
+    text-align: center;
+    background-color: green;
+    margin: 200px;
+    width: 600px;
+    height: 500px;
+    margin: 50px 50px 50px 25%;
+    padding: 50px;
+}
+
+footer {
+    background-color: rgba(36, 117, 36, 0.61);
+}
+
+
+
+
